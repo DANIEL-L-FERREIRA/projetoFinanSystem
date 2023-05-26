@@ -8,6 +8,8 @@ import { UsuarioService } from '../api/usuario.service';
   selector: 'app-usuario',
   templateUrl: './usuario.page.html',
   styleUrls: ['./usuario.page.scss'],
+  standalone: true,
+  imports: [IonicModule, CommonModule, FormsModule]
 })
 export class UsuarioPage implements OnInit {
 

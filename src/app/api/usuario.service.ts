@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http'; /* importação 
 })
 export class UsuarioService {
 
-  private host = 'localhost:8080/api/';
+  private host = 'http://localhost:8080/api/usuario';
 
 
   constructor(private http: HttpClient) { }
@@ -15,7 +15,7 @@ export class UsuarioService {
     return new Promise((ret) => {
 
       // requisição GET
-      this.http.get(this.host + 'usuario').subscribe(dados => {
+      this.http.get(this.host).subscribe(dados => {
 
         ret(dados);
 
