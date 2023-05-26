@@ -1,0 +1,119 @@
+<ion-header>
+
+  <ion-row>
+  <ion-col class="botao">
+    <ion-button expand="full" class="botao">
+      <ion-icon slot="start" name="add-outline"></ion-icon>INCLUIR</ion-button>
+  </ion-col>
+  <ion-col class="botao">
+    <ion-button expand="full" class="botao">
+      <ion-icon slot="start" name="pencil-outline"></ion-icon>ALTERAR</ion-button>
+  </ion-col>
+  <ion-col class="botao">
+    <ion-button expand="full" class="botao">
+      <ion-icon slot="start" name="trash-outline"></ion-icon>EXCLUIR</ion-button>
+  </ion-col>
+  <ion-col class="botao">
+    <ion-button expand="full" class="botao">
+      <ion-icon slot="start" name="list-outline"></ion-icon>LISTAR</ion-button>
+  </ion-col>
+</ion-row>
+
+</ion-header>
+
+<ion-row>
+  <ion-col class="espaco-vazio">
+  </ion-col>
+</ion-row>
+
+<ion-content>
+  <ion-row>
+    <ion-col class="cadastro">
+    CADASTRO DE USUÁRIO
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12" class="danger">
+      CÓDIGO USUÁRIO
+      <ion-input class="campo" [(ngModel)]="usuario.id"> </ion-input>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12" class="danger">
+      NOME
+      <ion-input class="campo" [(ngModel)]="usuario.nome"> </ion-input>
+     </ion-col>
+  </ion-row> 
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+        SETOR
+        <ion-input class="campo" [(ngModel)]="usuario.setor"> </ion-input>
+      </ion-col>
+    </ion-row>    
+    
+    <ion-row>
+      <ion-col size="12" class="danger">
+        CPF
+        <ion-input class="campo" [(ngModel)]="usuario.cpf"> </ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+        DATA NASCIMENTO
+        <ion-input class="campo" [(ngModel)]="usuario.dataNascimento"> </ion-input>
+      </ion-col>
+    </ion-row>    
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+        ENDEREÇO
+        <ion-input class="campo" [(ngModel)]="usuario.endereco"> </ion-input>
+      </ion-col>
+    </ion-row>  
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+        TIPO USUÁRIO
+        <ion-input class="campo" [(ngModel)]="usuario.tipoUsuario"> </ion-input>
+      </ion-col>
+
+    </ion-row>   
+     
+    <ion-row>
+      <ion-col size="12" class="danger">
+        LOGIN
+        <ion-input class="campo" [(ngModel)]="usuario.login"> </ion-input>
+      </ion-col>
+    </ion-row>  
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+        SENHA 
+        <ion-input class="campo" type="password" [(ngModel)]="usuario.senha"> </ion-input>
+      </ion-col>
+    </ion-row>  
+
+  <ion-footer>
+    
+    <ion-row>
+      <ion-col class="botao">
+        <ion-button expand="full" class="botao">
+          <ion-icon slot="start" name="arrow-undo-outline"></ion-icon>
+          VOLTAR
+        </ion-button>
+      </ion-col>
+      <ion-col class="botao">
+        <ion-button expand="full" class="botao">
+          <ion-icon slot="start" name="save-outline"></ion-icon>
+           GRAVAR
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-footer>
+  
+  </ion-content>
