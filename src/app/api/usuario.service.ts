@@ -66,6 +66,19 @@ export class UsuarioService {
       });
     })
   }
+  salvarCadastro(cadastro: any) {
+    const url = 'URL_DO_SERVIDOR'; // Substitua pela URL correta do seu servidor
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
+  
+    return this.http.post(url, cadastro, { headers }).subscribe(
+      (response) => {
+        console.log('Cadastro salvo com sucesso!', response);
+      },
+      (error) => {
+        console.error('Erro ao salvar o cadastro:', error);
+      }
+    );
+  }
 
   public deleteUsuarios(id: number){
     return new Promise((ret) => {

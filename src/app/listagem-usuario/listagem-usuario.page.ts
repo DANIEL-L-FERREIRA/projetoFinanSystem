@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from './../api/usuario.service';
 
+
 @Component({
   selector: 'app-listagem-usuario',
   templateUrl: './listagem-usuario.page.html',

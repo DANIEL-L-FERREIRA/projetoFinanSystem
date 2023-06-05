@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { UsuarioService } from '../api/usuario.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-usuario',
@@ -38,6 +39,5 @@ export class UsuarioPage implements OnInit {
       console.log(usuarios);
     });
   }
-
 
 }
