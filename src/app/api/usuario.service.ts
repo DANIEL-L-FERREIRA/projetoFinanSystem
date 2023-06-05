@@ -67,7 +67,7 @@ export class UsuarioService {
     })
   }
 
-  public deleteDados(id: number){
+  public deleteUsuarios(id: number){
     return new Promise((ret) => {
 
       // requisição DELETE

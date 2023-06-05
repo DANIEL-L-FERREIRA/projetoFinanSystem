@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> LISTA DE USUÁRIOS </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content>
+  <ion-row>
+    <ion-col size="4" class="lista">
+      <ion-button color="primary" (click)="getAllUsuarios()"> LISTAR USUARIOS </ion-button>
+    </ion-col>
+
+    <ion-col size="4" class="lista">
+      <ion-button color="danger" (click)="deleteById(4)"> DELETE </ion-button>
+    </ion-col>
+
+
+  </ion-row>
+
+  
+    <ion-row class="listagem" *ngFor="let usuario of usuarios">
+      <ion-col size="12" class="listagem">
+        {{ usuario.nome }} - {{ usuario.login }}
+      </ion-col>
+    </ion-row>
+ 
+  
+</ion-content>
