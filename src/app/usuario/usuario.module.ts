@@ -18,3 +18,6 @@ import { UsuarioPage } from './usuario.page';
   declarations: []
 })
 export class UsuarioPageModule {}
+
+
+
