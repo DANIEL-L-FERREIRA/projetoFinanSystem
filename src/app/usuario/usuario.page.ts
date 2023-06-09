@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { UsuarioService } from '../api/usuario.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-usuario',
@@ -25,19 +26,31 @@ export class UsuarioPage implements OnInit {
     login: '',
     senha: ''
 }
+  
+ 
 
-
-  constructor(private usuarioService: UsuarioService) {
+  constructor(private usuarioService: UsuarioService, private router: Router ) {
     this.getAllUsuarios();
+    
+    
    }
+  
+
+   
 
   ngOnInit() {
   }
+  navegarParaListagem() {
+    this.router.navigate(['/listagem-usuario'])
+  }
+  
 
   public getAllUsuarios(){
     this.usuarioService.getAllUsuarios().then(usuarios => {
       console.log(usuarios);
     });
+
+
   }
 
 }

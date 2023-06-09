@@ -2,19 +2,7 @@
 
   <ion-row>
   <ion-col class="botao">
-    <ion-button expand="full" class="botao">
-      <ion-icon slot="start" name="add-outline"></ion-icon>INCLUIR</ion-button>
-  </ion-col>
-  <ion-col class="botao">
-    <ion-button expand="full" class="botao">
-      <ion-icon slot="start" name="pencil-outline"></ion-icon>ALTERAR</ion-button>
-  </ion-col>
-  <ion-col class="botao">
-    <ion-button expand="full" class="botao">
-      <ion-icon slot="start" name="trash-outline"></ion-icon>EXCLUIR</ion-button>
-  </ion-col>
-  <ion-col class="botao">
-    <ion-button expand="full" class="botao" routerLink="/listagem-usuario">
+    <ion-button expand="full" class="botao" (click)="navegarParaListagem()" >
       <ion-icon slot="start" name="list-outline"></ion-icon>LISTAR</ion-button>
   </ion-col>
 </ion-row>
@@ -100,13 +88,15 @@
   <ion-footer>
     
     <ion-row>
-      <ion-col class="botao">
-        <ion-button expand="full" class="botao">
+      <ion-col>
+        <ion-button expand="full" class="botao" (click)="navegarParaListagem()">
           <ion-icon slot="start" name="arrow-undo-outline"></ion-icon>
           VOLTAR
         </ion-button>
+
+
       </ion-col>
-      <ion-col class="botao">
+      <ion-col >
         <ion-button expand="full" class="botao">
           <ion-icon slot="start" name="save-outline"></ion-icon>
            GRAVAR

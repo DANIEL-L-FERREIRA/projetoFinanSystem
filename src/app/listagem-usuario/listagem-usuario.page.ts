@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from './../api/usuario.service';
-
+import { Router, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-listagem-usuario',
@@ -10,11 +11,15 @@ import { UsuarioService } from './../api/usuario.service';
 export class ListagemUsuarioPage implements OnInit {
 
   public usuarios:any = [];
+  
+  
 
 
-  constructor(private service: UsuarioService) {
+  constructor(private service: UsuarioService,private router: Router ) {
     this.getAllUsuarios();
    }
+
+
 
   
 
@@ -33,7 +38,15 @@ export class ListagemUsuarioPage implements OnInit {
     })
   }
 
+  
+
   ngOnInit() {
   }
+
+  navegarParaInicio() {
+    this.router.navigate(['inicio']);
+  }
+  
+  
 
 }

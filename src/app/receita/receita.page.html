@@ -3,22 +3,23 @@
 
  
   <ion-row>
-  <ion-col size="3" class="botao">
-    <ion-button expand="full" color="tertiary">INCLUIR</ion-button>
-  </ion-col>
-  <ion-col size="3" class="botao">
-    <ion-button expand="full" color="tertiary">ALTERAR</ion-button>
-  </ion-col>
-  <ion-col size="3" class="botao">
-    <ion-button expand="full" color="tertiary">EXCLUIR</ion-button>
-  </ion-col>
-  <ion-col size="3" class="botao">
-    <ion-button expand="full" color="tertiary">LISTAR</ion-button>
-  </ion-col>
-
-
-
-</ion-row>
+    <ion-col class="botao">
+      <ion-button expand="full" class="botao">
+        <ion-icon slot="start" name="add-outline"></ion-icon>INCLUIR</ion-button>
+    </ion-col>
+    <ion-col class="botao">
+      <ion-button expand="full" class="botao">
+        <ion-icon slot="start" name="pencil-outline"></ion-icon>ALTERAR</ion-button>
+    </ion-col>
+    <ion-col class="botao">
+      <ion-button expand="full" class="botao">
+        <ion-icon slot="start" name="trash-outline"></ion-icon>EXCLUIR</ion-button>
+    </ion-col>
+    <ion-col class="botao">
+      <ion-button expand="full" class="botao">
+        <ion-icon slot="start" name="list-outline"></ion-icon>LISTAR</ion-button>
+    </ion-col>
+  </ion-row>
 
 </ion-header>
 
@@ -33,78 +34,82 @@
     
   <ion-row>
       <ion-col size="12" class="danger">
-        <ion-input class="campo"> </ion-input>
        NOME
+       <ion-input class="campo"> </ion-input>
       </ion-col>
 
     </ion-row>
 
     <ion-row>
       <ion-col size="12" class="danger">
-        <ion-input class="campo"> </ion-input>
         CNPJ/CPF
+        <ion-input class="campo"> </ion-input>
+       </ion-col>
+    </ion-row> 
+    
+    <ion-row>
+      <ion-col size="12" class="danger">
+        TIPO DA RECEITA
+        <ion-input class="campo"> </ion-input>
        </ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-col size="7" class="danger">
+      <ion-col size="12" class="danger">
+        DATA DA EMISSÃO
         <ion-input class="campo"> </ion-input>
-       TIPO DA RECEITA
-      </ion-col>
-
-      <ion-col size="5" class="danger">
-        <ion-input class="campo"> </ion-input>
-       DATA DE EMISSÃO
-      </ion-col>
-
-      
-    </ion-row>    
-    
-  
-
-      <ion-row>
-      <ion-col size="5" class="danger">
-        <ion-input class="campo"> </ion-input>
-       Nº NOTA
-      </ion-col>
-
-      <ion-col size="7" class="danger">
-        <ion-input class="campo"> </ion-input>
-       VALOR DA RECEITA
-      </ion-col>
-
-    </ion-row>   
-     
-    <ion-row>
-      <ion-col size="4" class="danger">
-        <ion-input class="campo"> </ion-input>
-       QUANTIDADE DE PARCELAS
-      </ion-col>
-      <ion-col size="8" class="danger">
-        <ion-input class="campo"> </ion-input>
-       DATA DE VENCIMENTO
-      </ion-col>
-
-    </ion-row>  
+       </ion-col>
+    </ion-row>
 
     <ion-row>
       <ion-col size="12" class="danger">
+        Nº NOTA
         <ion-input class="campo"> </ion-input>
-       OBSERVAÇÃO
-      </ion-col>
+       </ion-col>
+    </ion-row>
 
-      
+    <ion-row>
+      <ion-col size="12" class="danger">
+        VALOR DA RECEITA
+        <ion-input class="campo"> </ion-input>
+       </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+        QUANTIDADE DE PARCELAS
+        <ion-input class="campo"> </ion-input>
+       </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+       DATA DE VENCIMENTO
+       <ion-input class="campo"> </ion-input>
+       </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" class="danger">
+       OBSERVAÇÃO
+       <ion-input class="campo"> </ion-input>
+      </ion-col>
     </ion-row>  
 
     
-
     <ion-row>
-      <ion-col size="6" class="botao">
-      <ion-button expand="full" color="tertiary">GRAVAR</ion-button>
-    </ion-col>
-         <ion-col size="6" class="botao">
-      <ion-button expand="full" color="tertiary">VOLTAR</ion-button>
-    </ion-col>
+      <ion-col class="botao">
+        <ion-button expand="full" class="botao">
+          <ion-icon slot="start" name="arrow-undo-outline"></ion-icon>
+          VOLTAR
+        </ion-button>
+      </ion-col>
+      <ion-col class="botao">
+        <ion-button expand="full" class="botao">
+          <ion-icon slot="start" name="save-outline"></ion-icon>
+           GRAVAR
+        </ion-button>
+      </ion-col>
     </ion-row>
   
   </ion-content>
