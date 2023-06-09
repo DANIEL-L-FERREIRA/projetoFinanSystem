@@ -18,31 +18,32 @@
       </ion-row>
     
     
-  <ion-row>
-    <ion-col size="12" class="botao">
-    <ion-button expand="full" color="tertiary">CONTAS A PAGAR</ion-button>
-  </ion-col>
+    <ion-row>
+        <ion-col size="12" class="botao">
+          <ion-button expand="full" color="tertiary" (click)="navegarParaContaspagar()">CONTAS A PAGAR</ion-button>
+        </ion-col>
+      
   
   </ion-row>
 
   <ion-row>
    
     <ion-col size="12" class="botao">
-    <ion-button expand="full" color="tertiary">CONTAS A RECEBER</ion-button>
+    <ion-button expand="full" color="tertiary" routerLink="/contasreceber">CONTAS A RECEBER</ion-button>
   </ion-col>
   </ion-row>
 
   <ion-row>
    
     <ion-col size="12" class="botao">
-    <ion-button expand="full" color="tertiary">USUARIOS</ion-button>
+    <ion-button expand="full" color="tertiary"(click)="navegarParaUsuarios()">USUARIOS</ion-button>
   </ion-col>
   </ion-row>
 
   <ion-row>
 
     <ion-col size="12" class="botao">
- <ion-button expand="full" color="tertiary">LOGOFF</ion-button>
+ <ion-button expand="full" color="tertiary" (click)="navegarParaHome()">LOGOFF</ion-button>
 </ion-col>
 </ion-row>
 

@@ -6,7 +6,9 @@ import { IonicModule } from '@ionic/angular';
 
 import { ContaspagarPageRoutingModule } from './contaspagar-routing.module';
 
-import { ContaspagarPage } from './contaspagar.page';
+
+
+
 
 @NgModule({
   imports: [
@@ -18,3 +20,4 @@ import { ContaspagarPage } from './contaspagar.page';
   declarations: []
 })
 export class ContaspagarPageModule {}
+
