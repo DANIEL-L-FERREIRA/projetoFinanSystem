@@ -25,9 +25,16 @@ export class ContaspagarPage implements OnInit {
 
   navegarParaInicio() {
     this.router.navigateByUrl('inicio');
-
 }
-
+navegarParatipodespesa() {
+  this.router.navigateByUrl('tipodespesa');
+}
+navegarParaFornecedor() {
+  this.router.navigateByUrl('fornecedor');
+}
+navegarParaDespesa() {
+  this.router.navigate(['/despesa']);
+}
   
   
 }

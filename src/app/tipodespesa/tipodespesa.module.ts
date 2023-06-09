@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { TipodespesaPageRoutingModule } from './tipodespesa-routing.module';
 
 import { TipodespesaPage } from './tipodespesa.page';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TipodespesaPageRoutingModule
+    TipodespesaPageRoutingModule,
+    RouterModule
   ],
-  declarations: []
+  declarations: [TipodespesaPage]
 })
 export class TipodespesaPageModule {}

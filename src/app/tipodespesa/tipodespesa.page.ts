@@ -1,20 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-tipodespesa',
   templateUrl: './tipodespesa.page.html',
   styleUrls: ['./tipodespesa.page.scss'],
-  standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule]
+  
 })
 export class TipodespesaPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  navegarParaDespesa() {
+    this.router.navigate(['/tipodespesa']);
+  }
+  navegarParaContas() {
+    this.router.navigate(['/contaspagar']);
   }
 
 }

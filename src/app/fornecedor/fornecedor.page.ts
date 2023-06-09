@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-fornecedor',
@@ -13,9 +14,13 @@ import { IonicModule } from '@ionic/angular';
 })
 export class FornecedorPage implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit() {
+  }
+
+  navegarParaContas() {
+    this.router.navigateByUrl('contaspagar');
   }
 
 }
