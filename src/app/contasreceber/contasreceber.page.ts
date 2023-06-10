@@ -25,6 +25,20 @@ export class ContasreceberPage implements OnInit {
   }
   navegarParaInicio() {
     this.router.navigateByUrl('inicio');
-
+  }
+    navegarParaCadastroCliente() {
+      this.router.navigateByUrl('cliente');
+}
+navegarParaTipoReceita() {
+  this.router.navigateByUrl('tiporeceita');
+}
+navegarParaLancamentoreceita() {
+  this.router.navigateByUrl('receita');
+}
+navegarParaBaixarReceber() {
+  this.router.navigateByUrl('baixareceber');
+}
+navegarParaContasReceber() {
+  this.router.navigateByUrl('contasreceber');
 }
 }

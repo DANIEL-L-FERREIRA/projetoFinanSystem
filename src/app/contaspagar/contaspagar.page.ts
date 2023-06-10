@@ -35,6 +35,9 @@ navegarParaFornecedor() {
 navegarParaDespesa() {
   this.router.navigate(['/despesa']);
 }
+navegarParaTitulos() {
+  this.router.navigateByUrl('baixapagar');
+}
   
   
 }

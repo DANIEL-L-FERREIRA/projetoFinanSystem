@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { InicioPage } from '../inicio/inicio.page';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tiporeceita',
@@ -12,9 +14,11 @@ import { IonicModule } from '@ionic/angular';
 })
 export class TiporeceitaPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+navegarParaContas() {
+  this.router.navigateByUrl('contasreceber');
+}
 }
