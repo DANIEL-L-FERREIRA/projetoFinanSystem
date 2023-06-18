@@ -64,6 +64,10 @@ const routes: Routes = [
     path: 'listagem-usuario',
     loadChildren: () => import('./listagem-usuario/listagem-usuario.module').then( m => m.ListagemUsuarioPageModule)
   },
+  {
+    path: 'interfaces',
+    loadChildren: () => import('./interfaces/interfaces.module').then( m => m.InterfacesPageModule)
+  },
 ];
 
 @NgModule({
