@@ -66,9 +66,13 @@ export class UsuarioService {
   public deleteUsuarios(id: number) {
     return new Promise((ret) => {
       // requisição DELETE
-      this.http.delete(this.host + id).subscribe((dados) => {
-        console.log(dados);
+      this.http.delete(this.host + '/' + id).subscribe((dados) => {
+        ret(true)
+      }, (error) => {
+        ret(true)
       });
     });
   }
+  
+
 }

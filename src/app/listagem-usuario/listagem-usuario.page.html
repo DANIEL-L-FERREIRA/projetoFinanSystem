@@ -35,7 +35,21 @@
   
     <ion-row class="listagem" *ngFor="let usuario of usuarios">
       <ion-col size="12" class="listagem">
-        {{ usuario.nome }} - {{ usuario.login }}
+        <ion-row>
+          <ion-col size="6">
+            {{ usuario.nome }}
+          </ion-col>
+          <ion-col size="3">
+            <ion-button color="danger" expand="full" class="botao" (click)="deleteById(usuario.codUsuario)">  
+              <ion-icon name="close"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="3">
+            <ion-button color="primary" expand="full" class="botao">  
+              <ion-icon name="pencil"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row> 
       </ion-col>
     </ion-row>
  
